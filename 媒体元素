@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--视频元素-->
+    <video src="./mda-jbcdr0b0avbv0jp4.mp4" controls autoplay loop muted></video>
+    <!--存放不同版本的视频文件-->
+    <video loop controls muted autoplay >
+        <source src="./mda-jbcdr0b0avbv0jp4.mp4">
+        <!--由于只有一种版本所有就只存放一种格式-->
+        <source src="./mda-jbcdr0b0avbv0jp4.mp4">
+    </video>
+<!--音频元素-->
+    <audio src="./K_D - 浪人琵琶 (Live).mp3" loop controls muted autoplay></audio>
+<!--图片元素-->
+    <img src="./1.jpg" alt="星空图片">
+    <!--与map联用图片元素-->
+    <figure>
+        <a href="https://baike.baidu.com/item/%E5%A4%A9%E7%A9%BA/5534">
+            <img src="./th.jpg" usemap="#shineMap" alt="晴天图片">
+        </a>
+        <figcaption><h1>晴天图片</h1></figcaption>
+        <map name="shineMap">
+            <area shape="circle" coords="144,70,30" href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3/24010" alt="太阳">
+        </map>
+    </figure>
+    
+    
+</body>
+</html>
