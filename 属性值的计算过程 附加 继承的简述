@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {color: #008c8c;
+                    font-size: 2em;
+                    background-color: aliceblue;
+                    font-style: initial;
+        }
+        div{
+            color: #008c8c;
+        }
+    </style>    
+</head>
+<body>
+    <div>
+        <a href="">例如</a>
+        <p>Lorem</p>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse magni omnis laborum earum, aspernatur iure maxime libero reiciendis facilis qui quis accusantium consequuntur expedita ex? Sapiente cumque est possimus?</p>
+        <ul>
+            <li>Lorem.</li>
+            <li>Quo.</li>
+            <li>Laborum?</li>
+            <li>Quo.</li>
+            <li>Deleniti.</li>
+            <li>Quae!</li>
+            <li>Modi!</li>
+            <li>Fugit.</li>
+            <li>Error.</li>
+            <li>Hic.</li>
+        </ul>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem vitae optio sed placeat quasi consequuntur, beatae voluptatem cumque corrupti laboriosam voluptatum ipsam nihil debitis, voluptatibus maiores possimus non incidunt?</p>
+        </div>
+    </div>
+</body>
+</html>
