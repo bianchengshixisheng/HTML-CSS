@@ -1,0 +1,196 @@
+reset.css 重置css
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+margin: 0;
+
+padding: 0;
+
+border: 0;
+
+font-size: 100%;
+
+font: inherit;
+
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+
+footer, header, hgroup, menu, nav, section {
+display: block;
+
+}
+
+body {
+line-height: 1;
+
+}
+
+ol, ul {
+list-style: none;
+
+}
+
+blockquote, q {
+quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+content: '';
+
+content: none;
+
+}
+
+table {
+border-collapse: collapse;
+
+border-spacing: 0;
+
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+
+
+index.css  首页的css
+
+body{
+    background-color: #4d4a40;
+    line-height: 2;
+    /*最小网页宽度*/
+    min-width: 1000px;
+    /*最大网页宽度*/
+    /*max-width: 2000px;*/
+}
+article{
+    background-color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px 0;
+}
+
+article header{
+    background-color: #267890;
+    color: #fff;
+    text-align: center;
+    border: #14414e solid 5px;
+    margin: auto -34px;
+}
+article header div{
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+}
+article header p{
+    color: #dbdbdb;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+article header p a{
+    text-decoration: underline;
+}
+
+article header p a:hover{
+    color: #fff;
+
+}
+
+article section h2{
+    font-size: 32px;
+    font-weight: bold;
+    border-top: dotted;
+    border-bottom: dotted;
+}
+
+article section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+index.html  网页首页
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <article>
+                <header>
+                    <div>第一个网页</div>
+                    <p>网页地址：<a href="">https://www.baidu.com</a></p>
+                </header>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptas enim. Inventore exercitationem id minima. Porro maxime id sequi quis reiciendis, quae, eligendi placeat saepe corporis assumenda cum nihil voluptas!</p>
+            <p>Dignissimos odio laborum nobis! Modi vero provident laboriosam nulla quod nesciunt quaerat? Consequuntur perspiciatis aut nulla vero tenetur facilis sequi qui nam quidem. Tenetur officiis eligendi ducimus reprehenderit ut culpa.</p>
+            <p>Excepturi cumque maxime recusandae eos id fugit assumenda explicabo dolorem quisquam molestias nisi ipsa possimus nostrum odit dicta, sapiente quibusdam debitis vitae? Saepe quisquam accusantium, est sint eveniet quas hic!</p>
+        </section>
+        <section>
+            <h2>章节1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe, voluptas maiores quisquam sapiente in eos! Cupiditate ipsum saepe doloribus incidunt a totam doloremque, repellendus aspernatur vel ullam fugiat eius!</p>
+            <p>Quas quia omnis laudantium unde animi similique magni doloremque rerum quis dolorem dignissimos nesciunt, blanditiis facilis aspernatur soluta voluptatum quos ex necessitatibus est. Fugit voluptatum quibusdam qui. Possimus, quod obcaecati?</p>
+            <p>Distinctio saepe accusamus cumque esse atque fuga, repellat dolores dolor nihil blanditiis rem voluptatem magnam ducimus quibusdam? Porro, dolores in a dolor tenetur illo dicta quo! Porro temporibus assumenda asperiores!</p>
+        </section>
+        <section>
+            <h2>章节2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repudiandae veniam amet voluptas esse delectus tempora tempore molestias fuga fugit ab odit, ducimus velit a distinctio cum! Minima, officiis maxime!</p>
+            <p>Temporibus repellendus ad, neque nostrum laudantium dolore modi recusandae hic reprehenderit repellat deserunt non at, esse veritatis? Voluptate nobis nesciunt, veritatis rerum id laudantium distinctio. Error ad laboriosam blanditiis sint?</p>
+            <p>Facere neque impedit soluta veritatis nam provident nulla itaque velit illum aliquam? Atque sapiente similique quo, voluptatum necessitatibus vitae nihil mollitia minus doloremque dignissimos cumque ipsum minima at placeat dolores.</p>
+        </section>
+        <section>
+            <h2>章节3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum aliquam, ipsa, animi in sint assumenda incidunt ea hic mollitia eaque eveniet necessitatibus sequi neque expedita fugit. A, quam omnis!</p>
+            <p>Numquam dignissimos consequatur velit doloribus facilis, at ea, beatae est cum voluptatem minus. Deleniti, odit velit quam error quisquam placeat in non, dolores quas fugiat enim eos impedit nobis unde?</p>
+            <p>Blanditiis impedit dolorem sint quaerat! Porro tempore culpa illum, excepturi repellat est quis. Deserunt facere architecto, maiores quibusdam laudantium animi? Et consequuntur fuga recusandae quod. Hic, delectus? Officia, repellendus asperiores.</p>
+        </section>
+        <section>
+            <h2>章节4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas rerum mollitia numquam aperiam necessitatibus eum incidunt, quos repellat laudantium quod voluptatum hic obcaecati impedit? Vel atque unde quos alias possimus?</p>
+            <p>Ut, cum minima aperiam asperiores dolore doloribus dolorum quisquam esse consectetur libero quo laboriosam sunt provident facilis adipisci, commodi repudiandae sequi harum fugiat natus tenetur iusto molestiae maiores! Dicta, aliquam?</p>
+            <p>Eius impedit quis atque earum voluptates numquam repellat culpa, dolorem, eveniet, consequatur sint? Dolore quae pariatur facere quisquam aperiam corporis, consequuntur laudantium? Quo enim ad explicabo rem suscipit commodi eum?</p>
+        </section>
+        
+    </article>
+</body>
+</html>
