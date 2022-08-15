@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影院热映大片-热映大片票房</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+margin: 0;
+
+padding: 0;
+
+border: 0;
+
+font-size: 100%;
+
+font: inherit;
+
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+
+footer, header, hgroup, menu, nav, section {
+display: block;
+
+}
+
+body {
+line-height: 1;
+
+}
+
+ol, ul {
+list-style: none;
+
+}
+
+blockquote, q {
+quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+content: '';
+
+content: none;
+
+}
+
+table {
+border-collapse: collapse;
+
+border-spacing: 0;
+
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+      
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top{
+    width: 100%;
+    font-size: 34px;
+    font-style: italic;
+    background: #fff;
+    color: #ef4238;
+    text-align: center;
+    margin: 20px 0px;
+
+}
+
+.mian .always-choose{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #999;
+    background: #47464a;
+    margin-bottom: 40px;
+}
+
+.mian .always-choose a{
+    margin: 0 40px;
+
+}
+
+.mian .always-choose a:hover{
+    color: #fff;
+}
+
+.mian .always-choose a.option{
+    
+    color: #ef4238;
+}
+
+.mian .choose-area {
+    border: 1px solid #e5e5e5;
+    margin: 0 auto ;
+    width: 1098px;
+    line-height: 30px;
+    font-size: 14px;
+    
+    
+}
+
+
+.mian .choose-area .choose-itme{
+    line-height: 30px;
+    /* padding: 10 0; */
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 20px;
+    
+}
+
+.mian .choose-area .choose-itme .left{
+    float: left;
+    width: 60px;
+    text-align: right;
+    color: #999;
+    /* margin-top: 10px; */
+    
+}
+
+
+.mian .choose-area .choose-itme .right{
+    float: right;
+    width: 1030px;
+    font-size: 14px;
+    
+}
+
+.mian .choose-area .choose-itme .right ul{
+    float: left;
+}
+.mian .choose-area .choose-itme .right ul>li{
+    float: left;
+    margin: 0 10px;
+}
+
+.mian .choose-area .choose-itme .right ul>li:hover{
+    color: #ef4238;
+}
+
+.mian .choose-area .choose-itme .right .checked{
+    background: #ef4238;
+    color: #fff;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.mian .movies{
+    margin: 0 auto ;
+    width: 1098px;
+    margin-top: 60px;
+}
+
+.mian .movies .fime{
+    float: left;
+    width: 160px;
+    margin-right: 26px;
+
+
+}
+
+.mian .movies .fime:nth-child(6n){
+    margin-right: 0px;
+}
+
+.mian .movies .fime .name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.mian .movies .fime .score{
+    color: #ffb400;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+
+.mian .movies .fime .score::first-letter{
+    font-size: 18px;
+}
+
+.mian .page{
+    /* margin: 0 auto; */
+    /* width: 1098px; */
+    margin-top: 50px;
+    text-align: center;
+
+
+}
+
+.mian .page .choose{
+    /* width: 27px;
+    height: 27px; */
+    margin:0 10px;
+    border: 1px solid #d8d8d8;
+    padding: 5px 12px;
+}
+
+.mian .page .pager{
+    border: 1px solid #d8d8d8;
+    padding: 5px;
+    /* margin:  ; */
+}
+
+.mian .page .checked{
+    background: #ef4238;
+    color: #fff;
+}
+
+
+.bottom .message{
+    background: #262426;
+    /* margin: 82px 0 0; */
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.bottom .message:nth-child(1){
+    line-height: 0px;
+}
+
+
+    .bottom .top{
+        height: 82px;
+        width: 100%;
+        background: #262426;
+        margin-bottom: 0px;
+    }
+
+    .bottom .bottom{
+        height: 82px;
+        width: 100%;
+        background: #262426;
+        margin-bottom: 0px;
+    }
+
+    .bottom .a-important{
+        color: #ef4238;
+
+    }
+
+.bottom a:hover{
+    text-decoration-style: solid;
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+    .bottom .a-important:hover{
+        color: #ef4238;
+        text-decoration-style: solid;  
+        text-decoration-line: underline;      
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- 标题头 -->
+    <div class="top">
+        <p>猫眼电影</p>
+    </div>
+    </header>
+    <div class="mian">
+        <!-- 总选择头 -->
+        <div class="always-choose">
+            <a href="" class="option">正在热映</a>
+            <a href="" >即将上映</a>
+            <a href="" >经典老片</a>
+        </div>
+        <!-- 类型选择列表 -->
+        <div class="choose-area">
+            <div class="choose-itme clearfix">
+                <div class="left">类型:</div>
+                <div class="right">
+                    <ul>
+                    <li><a href="" class="checked">Lorem.</a></li>
+                    <li><a href="">Commodi!</a></li>
+                    <li><a href="">Veniam.</a></li>
+                    <li><a href="">Distinctio?</a></li>
+                    <li><a href="">Eum.</a></li>
+                    <li><a href="">Nam.</a></li>
+                    <li><a href="">Consectetur!</a></li>
+                    <li><a href="">Accusamus.</a></li>
+                    <li><a href="">Magni!</a></li>
+                    <li><a href="">Eius.</a></li>
+                    <li><a href="">Animi?</a></li>
+                    <li><a href="">Aspernatur.</a></li>
+                    <li><a href="">Illum.</a></li>
+                    <li><a href="">Maiores?</a></li>
+                    <li><a href="">Quisquam.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="choose-itme clearfix">
+                <div class="left">地区:</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="" class="checked">Lorem.</a></li>
+                        <li><a href="">Commodi!</a></li>
+                        <li><a href="">Veniam.</a></li>
+                        <li><a href="">Distinctio?</a></li>
+                        <li><a href="">Eum.</a></li>
+                        <li><a href="">Nam.</a></li>
+                        <li><a href="">Consectetur!</a></li>
+                        <li><a href="">Accusamus.</a></li>
+                        <li><a href="">Magni!</a></li>
+                        <li><a href="">Eius.</a></li>
+                        <li><a href="">Animi?</a></li>
+                        <li><a href="">Aspernatur.</a></li>
+                        <li><a href="">Illum.</a></li>
+                        <li><a href="">Maiores?</a></li>
+                        <li><a href="">Quisquam.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="choose-itme clearfix">
+                <div class="left">年代:</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="" class="checked">Lorem.</a></li>
+                        <li><a href="">Commodi!</a></li>
+                        <li><a href="">Veniam.</a></li>
+                        <li><a href="">Distinctio?</a></li>
+                        <li><a href="">Eum.</a></li>
+                        <li><a href="">Nam.</a></li>
+                        <li><a href="">Consectetur!</a></li>
+                        <li><a href="">Accusamus.</a></li>
+                        <li><a href="">Magni!</a></li>
+                        <li><a href="">Eius.</a></li>
+                        <li><a href="">Animi?</a></li>
+                        <li><a href="">Aspernatur.</a></li>
+                        <li><a href="">Illum.</a></li>
+                        <li><a href="">Maiores?</a></li>
+                        <li><a href="">Quisquam.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+        <!-- 影片选择点 -->      
+        <div class="movies clearfix">
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+            <div class="fime">
+                <div><img src="./图片/text.jpg" alt="" style="width: 160px; height:220px" class="picture"></div>
+                <div><p class="name">超能杨家人</p></div>
+                <div><p class="score">9.6</p></div>
+            </div>
+        </div>
+        <div class="page clearfix">
+            <a href="" class="pager">上一页</a>
+            <a href="" class="choose checked">1</a>
+            <a href="" class="choose">2</a>
+            <a href="" class="choose">3</a>
+            <a href="" class="choose">4</a>
+            <a href="" class="choose">5</a>
+            <a href="" class="choose">6</a>
+            <a href="" class="pager">下一页</a>
+        </div>
+
+
+    </div>
+    <footer>
+        <!-- 尾部 -->
+        <div class="bottom">
+            <div class="top"></div>
+            <!-- 相关信息 -->
+            <div class="message">
+                <ul>
+                    <li>关于猫眼 : <a class="a-important" href="">关于我们</a>  <a class="a-important" href="">管理团队</a>  <a class="a-important" href="">投资者关系</a>      友情链接 : <a class="a-important" href="">美团网</a>  <a class="a-important" href="">格瓦拉</a>  <a class="a-important" href="">美团下载</a>  <a class="a-important" href="">欢喜首映</a></li>
+                    <li>商务合作邮箱：v@maoyan.com 客服电话：10105335 违法和不良信息/涉未成年人有害信息举报电话：4006018900</li>
+                    <li><a href="">|涉未成年/有害信息举报邮箱：tousujubao@meituan.com</a>    |   <a href="">舞弊线索举报邮箱：wubijubao@maoyan.com</a></li>
+                    <li><a href="">中华人民共和国增值电信业务经营许可证 京B2-20190350</a>    |    <a href="">营业性演出许可证 京演（机构）（2019）4094号</a></li>
+                    <li><a href="">广播电视节目制作经营许可证 （京）字第08478号</a>    |    <a href="">网络文化经营许可证 京网文（2022）1334-041号</a></li>
+                    <li><a href="">猫眼用户服务协议</a>    |    <a href="">猫眼平台交易规则总则</a>  |  <a href="">隐私政策</a></li>
+                    <li><a href="">京公网安备 11010102003232</a>号    |    <a href="">京ICP备16022489号-1</a></li>
+                    <li>北京猫眼文化传媒有限公司</li>
+                    <li>©2022 猫眼电影 www.maoyan.com</li>
+                </ul>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </footer>
+</body>
+</html>
