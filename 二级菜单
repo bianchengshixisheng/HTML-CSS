@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    
+    html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+margin: 0;
+
+padding: 0;
+
+border: 0;
+
+font-size: 100%;
+
+font: inherit;
+
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+
+footer, header, hgroup, menu, nav, section {
+display: block;
+
+}
+
+body {
+line-height: 1;
+
+}
+
+ol, ul {
+list-style: none;
+
+}
+
+blockquote, q {
+quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+content: '';
+
+content: none;
+
+}
+
+table {
+border-collapse: collapse;
+
+border-spacing: 0;
+
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+    
+    
+      .headers{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(135, 144, 144);
+}
+/* 在添加此css的对象末尾添加一个清除浮动css */
+/* 采用伪元素after的方式在末尾添加 */
+clearfix::after{
+    content: "";
+    display: block;
+    /* both表示清除左右浮动 */
+    clear: both;
+}
+
+.headers .menus .total-menu{
+    margin-left: 30%;
+    line-height: 60px;
+}
+
+.headers .menus .total-menu>li{
+    /* width: 300px;
+    height: 60px; */
+    /* 设置一个为绝对定位服务的相对定位 */
+    position: relative;
+}
+
+.headers .menus .total-menu>li:hover{
+    background-color: #fff;
+    /* 先设置边框，然后取消下边框的设置 */
+    border: 2px solid #ccc;
+    border-bottom: none;
+    box-sizing: border-box;
+    line-height: 57px;
+
+}
+
+
+.headers .menus .total-menu>li{
+    float: left;
+    margin-right: 40px;
+    width: 100px;
+    text-align: center;
+    /* background-color: black; */
+    /* text-align: center; */
+    /* background-color: aqua; */
+
+}
+
+/* .headers .menus .total-menu .tatol{ */
+
+/* } */
+
+.headers .menus .total-menu .hover{
+    width: 200px;
+    height: 100px;
+    line-height: 1.5;
+    text-align: left;
+    /* 当display设置为none时，对象不显示 */
+    display: none;
+}
+
+.headers .menus .total-menu>li:hover .hover{
+    display: block;
+    /* background-color: aqua; */
+    border: 2px solid #ccc;
+    margin-top: 0px;
+    background-color:#fff;
+    /* 绝对定位，根据相对定位的位置来确定绝对定位的位置 */
+    position: absolute;
+    left: 0;
+}
+
+.headers .menus .total-menu>li:hover:after{
+    content: "";
+    height: 10px;
+    width:100%;
+    background-color:#fff;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    /* 采用外边距的方式使遮蔽方框位于菜单与二级菜单之间 */
+    margin-top: 50px;
+
+    
+}
+    </style>
+</head>
+<body>
+    <header class="headers">
+        <div class="menus">
+            <ul class="total-menu clearfix">
+                <li><a class="tatol">首页</a>
+                    <div class="hover">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio nesciunt dolor 
+                    </div>
+                </li>
+                <li><a class="tatol">购物车</a>
+                    <div class="hover">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio nesciunt dolor 
+                    </div>
+                </li>
+                <li><a class="tatol">收藏</a>
+                    <div class="hover">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio nesciunt dolor 
+                    </div>
+                </li>
+                <li><a class="tatol">分类</a>
+                    <div class="hover">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio nesciunt dolor 
+                    </div>
+                </li>
+                <li><a class="tatol">投诉</a>
+                    <div class="hover">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio nesciunt dolor 
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam incidunt labore vel repellendus, veniam officia ullam pariatur rem maiores deleniti aut, deserunt consequatur, quaerat sed accusamus iure earum doloribus eligendi amet libero expedita. Vitae nemo iste laboriosam! Fuga, velit eos! Aliquam autem, delectus aperiam dolorum temporibus perferendis neque, veniam eius obcaecati dolorem odio? Mollitia tenetur quasi unde et voluptate impedit quam consequatur earum neque beatae, facere necessitatibus ipsa fugit eligendi alias labore assumenda, reiciendis dolor quas molestiae dicta eveniet numquam non! Vitae quidem quis facilis est at eaque maiores nulla praesentium earum dolor sequi laudantium accusamus nostrum numquam provident impedit labore laboriosam aut, reiciendis cum iure non quia? Sequi repellat maxime voluptatum animi blanditiis eos ipsa consectetur. Possimus deleniti corrupti nulla quos, commodi illum soluta officia, molestiae enim consequuntur tenetur, est eligendi mollitia alias animi rem cupiditate ratione velit magni. Eum laborum accusamus quaerat eligendi tenetur odit sunt harum, neque quibusdam nam ex commodi repudiandae est mollitia. Repellendus dicta blanditiis quos harum eos exercitationem recusandae nemo enim! Excepturi in optio illum eligendi, culpa quis! Nulla dolorum praesentium sapiente vitae, tenetur rerum autem ipsa ad expedita architecto veritatis quasi. </div>
+</body>
+</html>
