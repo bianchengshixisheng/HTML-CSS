@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+    
+    html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+margin: 0;
+
+padding: 0;
+
+border: 0;
+
+font-size: 100%;
+
+font: inherit;
+
+vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+
+footer, header, hgroup, menu, nav, section {
+display: block;
+
+}
+
+body {
+line-height: 1;
+
+}
+
+ol, ul {
+list-style: none;
+
+}
+
+blockquote, q {
+quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+content: '';
+
+content: none;
+
+}
+
+table {
+border-collapse: collapse;
+
+border-spacing: 0;
+
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+    
+    .picture{
+    width: 520px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.picture .imges{
+    width: 2080px;
+    height: 300px;
+}
+
+.picture .imges img{
+    width: 520px;
+    height: 300px;
+}
+
+.picture .imges a{
+    float: left;
+}
+
+.picture .left,
+.picture .right{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: #f43; */
+    color: #fff;
+    font-size: 3em;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.picture .left{
+    left: 20px;
+}
+
+.picture .right{
+    right: 40px;
+}
+
+.picture .left:hover,
+.picture .right:hover{
+    background-color: rgba(255, 255, 255, .7);
+    color: #f43;
+    cursor: pointer;
+}
+
+.picture .shade{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #000a;
+    color: #fff;
+    line-height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.picture .shade .introduce{
+    float: left;
+    line-height: 30px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+
+}
+
+.picture .shade .dot li{
+    height: 8px;
+    width: 8px;
+    background: #ccc;
+    border-radius: 50%;
+    float: right;
+    margin-right: 2px;
+    display: inline;
+    
+}
+
+
+.picture .shade .dot li:hover{
+    background: lightblue;
+    cursor: pointer;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="picture">
+        <div class="imges">
+            <a href="" class="format"><img src="../picture/4f512ed87399718bbdc6acdce7c3e4e7.jpeg" alt=""></a>
+            <a href="" class="format"><img src="../picture/78301b4b41e015d469d7f67b8bf256ad.jpeg" alt=""></a>
+            <a href="" class="format"><img src="../picture/da1c726cbc8f0b2061a5ac145bd12b1b.jpeg" alt=""></a>
+            <a href="" class="format"><img src="../picture/eb5a1e5243b8822f817c0e614bcb237a.jpeg" alt=""></a>
+        </div>
+        <div class="left"><</div>
+        <div class="right">></div>
+        <div class="shade">
+            <div class="introduce">格尔木高原哔哩哔哩哔哩</div>
+            <div class="dot">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
